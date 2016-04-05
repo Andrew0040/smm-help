@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 
@@ -8,11 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <title>Раскрутка Instagram. Расскрутка в инстаграме.</title>
+    <link rel="stylesheet" href="jquery-ui-1.10.3/themes/base/jquery.ui.all.css">
+    <script src="jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+    <script src="jquery-ui-1.10.3/ui/jquery.ui.core.js"></script>
+    <script src="jquery-ui-1.10.3/ui/jquery.ui.widget.js"></script>
+    <script src="jquery-ui-1.10.3/ui/jquery.ui.accordion.js"></script>
+    <script>
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+        $(function () {
+            $("#accordion").accordion({
 
+                // ”становите свойство heightStyle: "content". Ёто позвол¤ет оставить базовую высоту аккордеону (по контенту).
+                heightStyle: "content"
+            });
+        });
+    </script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -21,11 +37,13 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <script src="js/modernizr.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -33,54 +51,616 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"> <i class="fa fa-bars"></i>
+    </a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"> <i class="fa fa-times"></i>
+            </a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >SMM-HELP</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                <a href="#about" onclick = $("#menu-close").click(); >Цены</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="#services" onclick = $("#menu-close").click(); >Актуальные вопросы</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Портфолио</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#contact" onclick = $("#menu-close").click(); >Контакты</a>
             </li>
         </ul>
     </nav>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Start Bootstrap</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-        </div>
-    </header>
+    <!-- Контейнер для слайдера -->
 
-    <!-- About -->
-    <section id="about" class="about">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!-- Контейнер для иконок каждого слайда -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active" style="height: 20px; width:20px"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" style="height: 20px; width:20px"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" style="height: 20px; width:20px"></li>
+        </ol>
+
+        <!-- Контейнер для слайдов -->
+        <div class="carousel-inner" style="font-size: 50px">
+            <div class="item active">
+                <img src="images/1.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Лучшие цены</h3>
+                                <br>
+            <a href="#about" class="btn btn-dark btn-lg">Узнать цены</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/2.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Гарантия работы!</h3>
+                                                    <br>
+            <a href="http://goo.gl/forms/kf9z3PgRyy" class="btn btn-dark btn-lg">Зполнить форму</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h3>Лучшие цены</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary" style="clear: both;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h1 style="font-size: 20px">Продвижение аккаунта в Instagram.</h1>
+                    <h3 style="font-size: 20px">Помощь в продвижениив в Интсаграм!</h3>
+                    <a href="http://goo.gl/forms/kf9z3PgRyy" target="_blank" class="btn btn-lg btn-light">Заполнить форму!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Заказать обратный звонок!</a>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
-    </section>
+    </aside>
+    <!-- Price -->
+    <section id="about" class="about">
+
+        <div class="cd-pricing-container cd-full-width cd-secondary-theme">
+            <div class="cd-pricing-switcher">
+                <p class="fieldset">
+                    <input type="radio" name="duration" value="usd" id="usd" checked>
+                    <label for="usd">
+                        <span class="new1">USD</span>
+                    </label>
+                    <input type="radio" name="duration" value="uah" id="uah">
+                    <label for="uah">
+                        <span class="new1">UAH</span>
+                    </label>
+                    <input type="radio" name="duration" value="rub" id="rub">
+                    <label for="rub">
+                        <span class="new1">RUB</span>
+                    </label>
+                    <span class="cd-switch"></span>
+                </p>
+            </div>
+            <!-- .cd-pricing-switcher -->
+
+            <ul class="cd-pricing-list cd-bounce-invert">
+                <li>
+                    <ul class="cd-pricing-wrapper">
+                        <li data-type="usd" class="is-visible">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">$</span>
+                                    <span class="cd-value">50</span>
+                                    <span class="cd-duration">месяц</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Анализ <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                    <li>
+                                        <em></em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+
+                        <li data-type="uah" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">грн.</span>
+                                    <span class="cd-value">1300</span>
+                                    <span class="cd-duration">месяц</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                    <li>
+                                        <em></em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                        <li data-type="rub" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">руб.</span>
+                                    <span class="cd-value">3500</span>
+                                    <span class="cd-duration">месяц</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                    <li>
+                                        <em></em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                    </ul>
+                    <!-- .cd-pricing-wrapper --> </li>
+
+                <li class="cd-popular">
+                    <ul class="cd-pricing-wrapper">
+                        <li data-type="usd" class="is-visible">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый+</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">$</span>
+                                    <span class="cd-value">125</span>
+                                    <span class="cd-duration">три месяца</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>15%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+
+                        <li data-type="uah" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый+</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">грн.</span>
+                                    <span class="cd-value">3250</span>
+                                    <span class="cd-duration">три месяца</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>15%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                        <li data-type="rub" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Базовый+</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">руб.</span>
+                                    <span class="cd-value">9000</span>
+                                    <span class="cd-duration">три месяца</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>15%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                    </ul>
+                </li>
+                <!-- .cd-pricing-wrapper -->
+
+                <li>
+                    <ul class="cd-pricing-wrapper">
+                        <li data-type="usd" class="is-visible">
+                            <header class="cd-pricing-header">
+                                <h2>Премиум</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">$</span>
+                                    <span class="cd-value">485</span>
+                                    <span class="cd-duration">год</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>20%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+
+                        <li data-type="uah" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Премиум</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">грн.</span>
+                                    <span class="cd-value">12600</span>
+                                    <span class="cd-duration">год</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>20%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                        <li data-type="rub" class="is-hidden">
+                            <header class="cd-pricing-header">
+                                <h2>Премиум</h2>
+
+                                <div class="cd-price">
+                                    <span class="cd-currency">руб.</span>
+                                    <span class="cd-value">35000</span>
+                                    <span class="cd-duration">год</span>
+                                </div>
+                            </header>
+                            <!-- .cd-pricing-header -->
+
+                            <div class="cd-pricing-body">
+                                <ul class="cd-pricing-features">
+                                    <li>
+                                        Скидка
+                                        <em>20%</em>
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Аккаунта</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Контента</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Тегов</em>
+
+                                    </li>
+                                    <li>
+                                        Анализ
+                                        <em>Конкуркентов</em>
+
+                                    </li>
+                                    <li>
+
+                                        <em>Поиск по ГЕО</em>
+
+                                    </li>
+                                    <li>
+                                        <em>Продвижение</em>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .cd-pricing-body -->
+
+                            <footer class="cd-pricing-footer">
+                                <a class="cd-select" href="http://goo.gl/forms/kf9z3PgRyy" target="_blank">Заказать</a>
+                            </footer>
+                            <!-- .cd-pricing-footer --> </li>
+                    </ul>
+                    <!-- .cd-pricing-wrapper --> </li>
+            </ul>
+            <!-- .cd-pricing-list --> </div>
+        <!-- .cd-pricing-container -
+    <!-- /.container --> </section>
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -88,188 +668,212 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
+                    <h2 style="font-size: 24px">Актуальные вопросы</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                        <div id="accordion">
+                            <h3>Как мы это делаем?</h3>
+                            <div style="text-align: left;">
+                                <p>
+                                    Наша команда имеет огромный опыт работы в сфере продвижения аккаунтов в социальных медиа и в частности в сервисе Instagram.
+                                </p>
+                                <p>
+                                    Мы уверенно гарантируем вам достойный результат, улучшение узнаваемости вашего бренда и увеличение продаж.
+                                </p>
+                                <p>
+                                    Продвижение вашего аккаунта будет проходить по уникальной системе, созданной нашими программистами.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                            <h3>Section 2</h3>
+                            <div>
+                                <p>
+                                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                            <h3>Section 3</h3>
+                            <div>
+                                <p>
+                                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                </p>
+                                <ul>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                    <li>List item</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+                    <!-- /.row (nested) --> </div>
+                <!-- /.col-lg-10 --> </div>
+            <!-- /.row --> </div>
+        <!-- /.container --> </section>
 
     <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
+    <style type="text/css">
+#text p, #text li{
+    margin:0 0 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+#text h1{
+    margin:5px 0 5px;
+    font-size: 23px;
+    text-align: center;
+}
+    </style>
+    <div id="text">
+        <aside class="callout">
+            <div class="col-lg-10 col-lg-offset-1 text-left">
+
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-left">
+                        <h1>Мы привлекаем потенциальных клиентов</h1>
+                        <p>
+ Наша команда имеет огромный опыт работы в сфере продвижения аккаунтов в социальных медиа и в частности в сервисе Instagram.
+                        </p>
+                        <p>
+ Мы уверенно гарантируем вам достойный результат, улучшение узнаваемости вашего бренда и увеличение продаж.
+                        </p>
+                        <p>
+           Продвижение вашего аккаунта будет проходить по уникальной системе, созданной нашими программистами. 
+                        </p>
+                        <p>
+    Основными приёмами являются mass-following и mass-liking.
+                        </p>
+                        <p>
+                            Преимущества работы с нами:
+<ul>
+    <li>живые подписчики, никаких «ботов»</li>
+    <li>только «белое» продвижение, отсутствие риска попадания в «бан»</li>
+    <li>поиск по ГЕО-локации и аккаунтам конкурентов</li>
+    <li>клиентская поддержка 24/7</li>
+    <li>ежемесячный детализированный отчёт по проведённой работе</li>
+    <li>работа только с <strong>целевой аудиторией</strong> вашего бизнеса </li>
+
+
+</ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
+    <script type="text/javascript">
+        $(function(){
+  var front = $('.Front'),
+      others = ['Left2', 'Left', 'Right', 'Right2'];
+  
+  $('.Carousel').on('click', '.Items', function() {
+    var $this = $(this);
+    
+    $.each(others, function(i, cl) {
+      if ($this.hasClass(cl)) {
+        front.removeClass('Front').addClass(cl);
+        front = $this;
+        front.addClass('Front').removeClass(cl);
+      }
+    });
+  });
+});
+    </script>
+    <div class="Container" id="portfolio">
+        <div class="row-fluid">
+            <h2 style="font-size: 24px; margin:0 0 10px 0; text-align: center;">Наши работы:</h2>
+            <hr class="small">
+            <ul class="Carousel">
+                <li class="Items Front">
+                    <img src="images/portfolio/1.jpg"></li>
+                <li class="Items Left">
+                    <img src="images/portfolio/2.jpg"></li>
+                <li class="Items Left2">
+                    <img src="images/portfolio/3.jpg"></li>
+                <li class="Items Right">
+                    <img src="images/portfolio/4.jpg"></li>
+                <li class="Items Right2">
+                    <img src="images/portfolio/5.jpg"></li>
+            </ul>
         </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    </div>
+    <!-- Call to Action 2 -->
+    <aside class="call-to-action bg-primary" style="clear: both;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <h3> <b style="font-size: 20px">Продвижение в инстаграме</b>
+                    </h3>
+                    <a href="http://goo.gl/forms/kf9z3PgRyy" target="_blank" class="btn btn-lg btn-light">Заполнить форму</a>
+                    <a href="staty.html" class="btn btn-lg btn-light">Полезные статьи</a>
                 </div>
             </div>
         </div>
     </aside>
-
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
-    </section>
-
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
+        <div id="contact" class="container">
+            <div class="row" >
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4> <strong>Наши контакты:</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        <li style="font-size: 24px">
+                            <i class="fa fa-phone fa-fw"></i>
+                            +38(044) 777-22-44
                         </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                        <ul class="list-unstyled">
+                            <li style="font-size: 24px">
+                                <i class="fa fa-phone fa-fw"></i>
+                                + 37(058) 777-22-44
+                            </li>
+                            <li style="font-size: 24px">
+                                <i class="fa fa-envelope-o fa-fw"></i>
+                                <a href="mailto:help@smm-help.com">help@smm-help.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram fa-fw fa-3x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-vk fa-fw fa-3x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook fa-fw fa-3x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter fa-fw fa-3x"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">SMM-HELP &copy; 2016</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/main.js"></script>
+        <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -302,4 +906,4 @@
 
 </body>
 
-</html>
+    </html>
